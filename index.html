@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<!-- Currency Conversion Calculator
+	 by Devon Blandin, April 2012
+	 for IT 238, Spring Quarter 2012      -->
+<head>
+	<meta charset="UTF-8">
+	<title>Currency Conversion Calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	<header>
+		<h1><a href="http://devonblandin">Devon Code Shop</a> | IT 238 Assignments</h1>
+	</header>
+	<section>
+		<h1><a href="http://facsrv.cs.depaul.edu/~cmiller/it238/assn1.html">Assignment 1</a>: Currency Conversion Calculator</h1>
+		<noscript class="error">Enable Javascript to use this tool.</noscript>
+		<div class="formRow">
+		  	<select id="fromCurrencyChoice"><option>Loading...</option></select>
+	  		<input type="button" id="swapCurrencyButton" />
+		 	<select id="toCurrencyChoice"><option>Loading...</option></select>
+		</div>
+		<div class="formRow">
+			<input id="currencyAmountChoice" value=1 disabled />
+		</div>
+		<p id="result"></p>
+	</section>
+</body>
+</html>

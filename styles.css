@@ -1,0 +1,152 @@
+/* Currency Conversion Calculator
+   by Devon Blandin, April 2012
+   for IT 238, Spring Quarter 2012 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------- Styles ---------------- */
+
+body {
+	background:#fff;
+	width:960px;
+	padding:10px;
+}
+
+h1,p,label,input {
+	font-family:Garamond;
+	color:#534A59;
+}
+
+h1 {
+	font-size:1.4em;
+	font-weight:bold;
+	margin:20px 0;
+}
+header {
+	border-bottom:solid 1px #534A59	;
+}
+a:link, a:visited {
+	text-decoration:none;
+	color:#211626;
+}
+a:link:hover {
+	text-decoration:underline;
+}
+section {
+	width:600px;
+}
+select {
+   background: transparent;
+   width: 281px;
+   padding: 5px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+   float:left;
+   text-align:center;
+}
+input#currencyAmountChoice {
+	background: transparent;
+	float:none;
+	width:100%;
+	font-weight:bold;
+	font-size:1.2em;
+	clear:both;
+	margin:10px 3px;
+}
+.error {
+	color:#000;
+	padding:5px;
+	border:2px red solid;
+}
+.formRow {
+	font-size:1.2em;
+	width:100%;
+}
+#swapCurrencyButton {
+	float:left;
+	background:url('swap.png') no-repeat center;
+	display:inline;
+	width:30px;
+	height:30px;
+	margin:2px 4px;
+}
+#result {
+	font-weight:bold;
+	margin-left:10px;
+	font-size:1.2em;
+	line-height:1.2em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+
+	body {
+		width: 95%;
+	}
+	section {
+		width: auto;
+		margin: 20px 0;
+	}
+	#swapCurrencyButton, select {
+		float:none;
+		width:100%;
+		margin:4px 0;
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+}
